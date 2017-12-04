@@ -13,12 +13,10 @@
     "node": ">=4"
   },
   "scripts": {
+    "build": "tsc",
     "test": "xo && ava"
   },
-  "files": [
-    "index.js",
-    "buffer-stream.js"
-  ],
+  "files": ["index.js", "buffer-stream.js"],
   "keywords": [
     "get",
     "stream",
@@ -38,8 +36,10 @@
     "obj"
   ],
   "devDependencies": {
+    "@types/node": "^8.0.54",
     "ava": "*",
     "into-stream": "^3.0.0",
+    "typescript": "^2.6.2",
     "xo": "*"
   },
   "xo": {
